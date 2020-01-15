@@ -9,6 +9,10 @@ body {
 /* système de polices */
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:100);
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 .montserrat{
     font-family: 'Montserrat', sans-serif;
@@ -17,9 +21,23 @@ body {
     font-family: 'Julius Sans One';
 }
 
+.oswald{
+    font-family: 'Oswald', sans-serif; 
+    font-weight: bolder;
+}
+
+.slabo{
+  font-family: 'Slabo 27px', serif;
+}
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
+}
+
+
 /* start header */
 
-/* end header */
+
 /* start menu */
 .logo{
     width:225px;
@@ -49,13 +67,125 @@ a.effect-underline:hover:after {
 }
 /* end menu */
 
+/* start bottom header */
+
+.bottom-header{
+  min-height: 700px;
+  background-image: url(../img/pattern-3.jpg);
+  background-size: cover;
+background-repeat: no-repeat;
+  /* background-image: url(../img/trial-fond-blanc.jpg); */
+  padding-top: 10%;
+  padding-bottom:10%;
+}
+
+
+.text-line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear forwards, filling 5s ease-in forwards;
+  font-size: 130px;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filling {
+  0%, 90% { fill: #000; fill-opacity: 0; }
+  100% { fill: #000; fill-opacity: 1; }
+}
+
+.job-title{
+  width: 19%;
+  font-weight: bold;
+  color: red;
+  font-size: 22px;
+
+}
+
+#web-square{
+  font-weight: bold;
+  color: black;
+  font-size: 22px;
+}
+
+/* start scroll button */
+
+.demo a {
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #000000;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+ 
+
+  #section06 a {
+    padding-top: 70px;
+  }
+  
+  #section06 a #scroll-animation {
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    -webkit-transform: rotateZ(-45deg);
+    transform: rotateZ(-45deg);
+    -webkit-animation: sdb06 1.5s infinite;
+    animation: sdb06 1.5s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb06 {
+    0% {
+      -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  @keyframes sdb06 {
+    0% {
+      transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+
+/* end scroll button */
 
 
 
+/* end bottom header */
+
+/* end header */
 
 /* start compétences */
 
-.bottom-header{
+.knowledges{
     overflow: hidden;
 }
 
@@ -436,3 +566,4 @@ a.effect-underline:hover:after {
         background-color: #4285F4;
     }
 }
+  }
