@@ -15,14 +15,33 @@ $(function() {
 // END BOTTOM HEADER
 
 
-//START COMPETENCES
+//START KNOWLEDGES
+
+$(document).ready(function() {
+  $('.show-frontend').click(function() {
+    $('.hidden-frontend').slideToggle("slow");
+  });
+});
+
+$(document).ready(function() {
+  $('.show-backend').click(function() {
+    $('.hidden-backend').slideToggle("slow");
+  });
+});
+
+$(document).ready(function() {
+  $('.show-outils').click(function() {
+    $('.hidden-outils').slideToggle("slow");
+  });
+});
 
 
-//END COMPETENCES
+//END KNOWLEDGES
 
 
 // START PROJETS
 
+// start slider
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -341,28 +360,8 @@ var Slider = function () {
 var sliderEl = document.getElementById('slider');
 var slider = new Slider(sliderEl);
 
-// ------------------ Demo stuff ------------------------ //
 
-var timer = 0;
 
-function autoSlide() {
-  requestAnimationFrame(function () {
-    slider.next();
-  });
 
-  timer = setTimeout(autoSlide, 5000);
-}
-
-function stopAutoSlide() {
-  clearTimeout(timer);
-
-  this.removeEventListener('touchstart', stopAutoSlide);
-  this.removeEventListener('mousemove', stopAutoSlide);
-}
-
-sliderEl.addEventListener('mousemove', stopAutoSlide);
-sliderEl.addEventListener('touchstart', stopAutoSlide);
-
-timer = setTimeout(autoSlide, 2000);
 
 // END PROJETS
