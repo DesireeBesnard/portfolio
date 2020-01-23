@@ -99,90 +99,16 @@ video{
  
 }
 
+.header-subtitle{
+  height: 20vh;
+}
+
 .text-header{
   width: 600px;
-  z-index: 1000;
-  top:50vh;
-  left: 58%;
+  z-index: 2000;
+  left: 72%;
+  top:52vh;
 }
-
-.job-title{
-  width: 100%;
-  font-weight: bold;
-  color: red;
-  font-size: 22px;
-}
-
-#web-square{
-  font-weight: bold;
-  color: white;
-  font-size: 22px;
-}
-
-/* start scroll button */
-
-.demo a {
-    position: absolute;
-    left: 550px;
-    top: 700px;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    color: white;
-    letter-spacing: .1em;
-    text-decoration: none;
-    transition: opacity .3s;
-}
- 
-
-  #section06 a {
-    padding-top: 70px;
-  }
-  
-  #section06 a #scroll-animation {
-    position: absolute;
-    bottom:0;
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
-    -webkit-transform: rotateZ(-45deg);
-    transform: rotateZ(-45deg);
-    -webkit-animation: sdb06 1.5s infinite;
-    animation: sdb06 1.5s infinite;
-    box-sizing: border-box;
-  }
-  @-webkit-keyframes sdb06 {
-    0% {
-      -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-      opacity: 0;
-    }
-  }
-  @keyframes sdb06 {
-    0% {
-      transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
-      opacity: 0;
-    }
-  }
-
-/* end scroll button */
-
-
 
 /* end bottom header */
 
@@ -243,12 +169,9 @@ height: auto;
 /* START PROJETS */
 
 .slide-content-cta, .slide-side-text, .controls-button {
-  font-family: 'Montserrat';
-  text-transform: uppercase;
+  font-family: 'Julius Sans One';
   color: #fff;
-  letter-spacing: .12rem;
   font-size: .7rem;
-  line-height: 1;
 }
 
 [v-cloak] {
@@ -331,14 +254,7 @@ height: auto;
     left: calc(13vw + 1rem);
   }
 }
-@media (max-height: 730px) {
-  .slide-content {
-    top: 30%;
-    -webkit-transform: translateY(-30%);
-            transform: translateY(-30%);
-    left: calc(9vw + (.7) * 16vw);
-  }
-}
+
 .slide-content-text {
   font-size: 9rem;
   letter-spacing: .2rem;
@@ -346,31 +262,7 @@ height: auto;
   font-weight: 700;
   will-change: auto;
 }
-@media (max-height: 790px) {
-  .slide-content-text {
-    font-size: 7rem;
-  }
-}
-@media (max-width: 1150px) {
-  .slide-content-text {
-    font-size: 7rem;
-  }
-}
-@media (max-width: 840px) {
-  .slide-content-text {
-    font-size: 5.5rem;
-  }
-}
-@media (max-width: 630px) {
-  .slide-content-text {
-    margin-bottom: 5.5rem;
-  }
-}
-@media (max-width: 500px) {
-  .slide-content-text {
-    font-size: 3.5rem;
-  }
-}
+
 .slide-content-text > p:last-child {
   padding-left: 3rem;
 }
@@ -1066,10 +958,100 @@ height: auto;
 video{
   width: 160%;
 }
-
-.text-header {
- top: 58vh;
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+.header-name-svg{
+  top: 43%;
+  font-size: 100px;
+}
+
+video{
+  width: 221%;
+
+}
+
+.slide-content-text {
+  font-size: 5rem;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+.header-name-svg {
+  font-size: 74px;
+}
+
+video {
+  width: 126%;
+}
+
+.wrapper {
+  min-height: 32rem;
+}
+
+.slide-content-text {
+  font-size: 5rem;
+}
+
+.controls-button {
+  padding: 1.2rem 2.0rem;
+  min-width: 8rem;
+  font-size: 0.6rem;
+}
+
+.controls-button.active {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+.header-name-svg {
+  font-size: 61px;
+}
+
+  video {
+  width: 168%;
+}
+
+.sm-hidden-frontend{
+  height:100%;
+  width: 100%;
+  background-image: url(../img/knowledgesdiv1.jpg);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-size: cover;
+  background-position: 25% 87%;
+}
+
+.sm-hidden-backend{
+  height:100%;
+  width: 100%;
+  background-image: url(../img/knowledgesdiv2.jpg);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-size: cover;
+  background-position: 25% 87%;
+}
+
+.sm-hidden-design{
+  height:100%;
+  width: 100%;
+  background-image: url(../img/knowledgesdiv3.jpg);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-size: cover;
+  background-position: 25% 87%;
+}
+
+.slide-content-text {
+  font-size: 3rem;
+}
+
+.socialmedia-links {
+  width: 7%;
+}
+}
+
+@media (max-width: 575.98px) {
 
 }
