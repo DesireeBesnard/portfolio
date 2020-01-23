@@ -9,10 +9,6 @@ body {
     padding: 0;
 }
 
-.projets-body{
-
-}
-
   /* start menu */
 .logo{
     width:225px;
@@ -42,3 +38,10 @@ a.effect-underline:hover:after {
 }
 /* end menu */
 
+.view:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.boitedialogue{
+  margin-top: 25%;
+}
