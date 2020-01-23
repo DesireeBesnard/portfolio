@@ -1022,12 +1022,17 @@ video {
 }
 
 .wrapper {
-  height: 75vh;
+  height: 68vh;
   min-height: 0;
 }
 
 .slide-content-text {
   font-size: 3rem;
+}
+
+.logo-footer{
+  width: 47%;
+  height: auto;
 }
 
 .socialmedia-links {
@@ -1037,4 +1042,33 @@ video {
 
 @media (max-width: 575.98px) {
 
+.header-name-svg {
+  top: 37%;
+  right: 2%;
+  font-size: 56px;
+}
+
+video {
+  width: 176%;
+  right: -3%;
+}
+
+.logoknowledges {
+  width: 58px;
+  height: auto;
+}
+
+.wrapper {
+  height: 68vh;
+  min-height: 0;
+}
+
+.logo-footer{
+  width: 47%;
+  height: auto;
+}
+
+.socialmedia-links {
+  width: 10%;
+}
 }
