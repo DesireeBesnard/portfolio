@@ -7,6 +7,8 @@
 body {
     margin: 0;
     padding: 0;
+    /* background-image: url(../img/adobestock.jpeg); */
+    background-size: cover;
 }
 
   /* start menu */
@@ -14,6 +16,10 @@ body {
     width:225px;
     height: auto;
 }
+
+a{
+  font-size: 18.8px;
+} 
 
 a.effect-underline:after {
 	content: '';
@@ -45,3 +51,25 @@ a.effect-underline:hover:after {
 .boitedialogue{
   margin-top: 25%;
 }
+
+.btn{
+  font-size: .91rem;
+}
+
+.pink-button{
+  background-color: #e2c9c5;
+}
+
+/* .modal-content{
+  background-image: url(../img/adobestock.jpeg);
+  background-size: cover;
+ background-position-x: left;
+} */
+
+.pink-button1{
+  background-image: url(../img/adobestock.jpeg);
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: center;
+}
+

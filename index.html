@@ -20,48 +20,24 @@
 
   <!--start header-->
 
-  <div class="container-fluid position-relative overflow-hidden px-sm-0 px-md-0 header juliussanson">
+  <div class="container-fluid position-relative overflow-hidden px-0 header juliussanson" id="accueil">
 
     <svg height="130" stroke="#000" stroke-width="1" class="position-absolute header-name-svg juliussansone"
       width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" fill="white" y="50%">Désirée
         Besnard</text>
     </svg>
+    <svg height="130" stroke="#000" stroke-width="1" class="position-absolute header-name-svg2 juliussansone"
+      width="100%"><text x="50%" dominant-baseline="middle" text-anchor="middle" fill="white" y="50%">Développeuse web
+        Junior</text>
+    </svg>
 
-    <header class="position-relative embed-responsive-21by9">
-      <nav class="navbar navbar-expand-lg scrolling-navbar fixed-top bg-white">
+    <!-- start navbar -->
+    <!-- end navbar -->
 
-        <div class="col-md-4 col-lg-4">
-          <a href="index.html"><img class="logo" src="img/logo-entier-desiree.png" alt="logo Désirée Besnard" height="176" width="1200"></a>
-        </div>
-
-        <div class="col-md-7 col-lg-7 collapse navbar-collapse juliussansone" id="navbarSupportedContent">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <ul class="navbar-nav w-100 justify-content-lg-between">
-            <li class="nav-item">
-              <a class="nav-link text-dark effect-underline" href="#">ACCUEIL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark effect-underline" href="#">COMPETENCES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark effect-underline" href="#">PROJETS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark effect-underline" href="#">A PROPOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark effect-underline" href="#">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <video class="video position-absolute embed-responsive-item" playsinline="playsinline" autoplay="autoplay"
+    <header class="position-relative">
+      <video class="video position-absolute embed-responsive-21by9" playsinline="playsinline" autoplay="autoplay"
         muted="muted" loop="loop">
         <source src="video/videoancre.mp4" type="video/mp4"></video>
-
     </header>
 
     <div class="container position-absolute header-subtitle d-flex">
@@ -70,58 +46,72 @@
     </div>
   </div>
 
-  <div class="container-fluid knowledges juliussansone d-none d-sm-block pt-md-5 pb-md-5">
+  <div class="container-fluid knowledges juliussansone d-none d-sm-block pt-md-5 pb-md-5" id="competences">
     <div class="container mt-sm-5 mb-sm-2 pb-sm-4">
       <h1 class="text-center text-black mb-md-3">COMPÉTENCES</h1>
       <div class="row pl-md-1 pr-md-1 mb-md-3">
         <div class="col-sm-4 p-sm-0">
           <div class="card rounded show-frontend ">
-            <img class="img-fluid img-knowledges1" src="img/knowledgescard1.jpg" alt="image de fond des compétences front-end" height="3264" width="3264">
+            <img class="img-fluid img-knowledges1" src="img/knowledgescard1.jpg"
+              alt="image de fond des compétences front-end" height="3264" width="3264">
           </div>
         </div>
         <div class="col-sm-4 p-sm-0">
           <div class="card rounded show-backend ">
-            <img class="img-fluid img-knowledges2" src="img/knowledgescard2.jpg" alt="image de fond des compétences back-end" height="5346" width="5346">
+            <img class="img-fluid img-knowledges2" src="img/knowledgescard2.jpg"
+              alt="image de fond des compétences back-end" height="5346" width="5346">
           </div>
         </div>
         <div class="col-sm-4 p-sm-0">
           <div class="card rounded show-outils ">
-            <img class="img-fluid img-knowledges3" src="img/knowledgescard3.jpg" alt="image de fond des compétences en design" height="2832" width="2832">
+            <img class="img-fluid img-knowledges3" src="img/knowledgescard3.jpg"
+              alt="image de fond des compétences en design" height="2832" width="2832">
           </div>
         </div>
       </div>
       <div class="row hidden-row pl-sm-3 pr-sm-3">
-        <div class="hidden-frontend" style="display: none;">
+        <div class="hidden-frontend mb-3" style="display: none;">
           <div class="col-sm-8 offset-sm-2 d-flex justify-content-center pt-sm-4 pb-sm-4">
             <img class="img-fluid logoknowledges" src="img/logohtml.png" alt="logo html" height="177" width="177">
-            <img class="img-fluid ml-sm-4 logoknowledges" src="img/logobootstrap.png" alt="logo de bootstrap" height="240" width="240">
+            <img class="img-fluid ml-sm-4 logoknowledges" src="img/logobootstrap.png" alt="logo de bootstrap"
+              height="240" width="240">
             <img class="img-fluid ml-sm-4 logoknowledges" src="img/logocss.png" alt="logo css" height="177" width="177">
-            <img class="img-fluid ml-sm-4 logoknowledges" src="img/logosass.png" alt="logo de sass" height="142" width="142">
-            <img class="img-fluid ml-sm-4 logoknowledges" src="img/logojs.png" alt="logo javascript" height="142" width="142">
-            <img class="img-fluid ml-sm-4 logoknowledges" src="img/logoreact.png" alt="logo de react" height="132" width="142">
+            <img class="img-fluid ml-sm-4 logoknowledges" src="img/logosass.png" alt="logo de sass" height="142"
+              width="142">
+            <img class="img-fluid ml-sm-4 logoknowledges" src="img/logojs.png" alt="logo javascript" height="142"
+              width="142">
+            <img class="img-fluid ml-sm-4 logoknowledges" src="img/logoreact.png" alt="logo de react" height="132"
+              width="142">
           </div>
         </div>
       </div>
       <div class="row hidden-row pl-sm-3 pr-sm-3">
-        <div class="hidden-backend" style="display: none;">
+        <div class="hidden-backend mb-3" style="display: none;">
           <div class="row pt-sm-4 pb-sm-4">
             <div class="col-sm-8 offset-sm-2 d-flex justify-content-center">
               <img class="img-fluid logoknowledges" src="img/logophp.png" alt="logo php" height="256" width="256">
-              <img class="img-fluid ml-sm-4 logoknowledges" src="img/logosymfony.png" alt="logo symfony" height="142" width="142">
-              <img class="img-fluid ml-sm-4 logoknowledges" src="img/logosql.png" alt="logo sql" height="142" width="142">
-              <img class="img-fluid ml-sm-4 logoknowledges" src="img/logophpmyadmin.png" alt="logo phpmyadmin" height="142" width="240">
-              <img class="img-fluid ml-sm-4 logoknowledges" src="img/twig.png" alt="logo de twig" height="189" width="189">
+              <img class="img-fluid ml-sm-4 logoknowledges" src="img/logosymfony.png" alt="logo symfony" height="142"
+                width="142">
+              <img class="img-fluid ml-sm-4 logoknowledges" src="img/logosql.png" alt="logo sql" height="142"
+                width="142">
+              <img class="img-fluid ml-sm-4 logoknowledges" src="img/logophpmyadmin.png" alt="logo phpmyadmin"
+                height="142" width="240">
+              <img class="img-fluid ml-sm-4 logoknowledges" src="img/twig.png" alt="logo de twig" height="189"
+                width="189">
             </div>
           </div>
         </div>
       </div>
       <div class="row hidden-row pl-sm-3 pr-sm-3">
-        <div class="hidden-outils" style="display: none;">
+        <div class="hidden-outils mb-3" style="display: none;">
           <div class="row pt-sm-4 pb-sm-4">
             <div class="col-sm-8 offset-sm-2 d-flex justify-content-center">
-              <img class="img-fluid logoknowledges" src="img/logophotoshop.png" alt="logo de Photoshop" height="189" width="189">
-              <img class="img-fluid ml-sm-4 logoknowledges" src="img/logoxd.png" alt="logo de Adobe XD" height="142" width="142">
-              <img class="img-fluid ml-sm-4 logoknowledges" src="img/logoillustrator.png" alt="logo de Illustrator" height="189" width="189">
+              <img class="img-fluid logoknowledges" src="img/logophotoshop.png" alt="logo de Photoshop" height="189"
+                width="189">
+              <img class="img-fluid ml-sm-4 logoknowledges" src="img/logoxd.png" alt="logo de Adobe XD" height="142"
+                width="142">
+              <img class="img-fluid ml-sm-4 logoknowledges" src="img/logoillustrator.png" alt="logo de Illustrator"
+                height="189" width="189">
             </div>
           </div>
         </div>
@@ -132,16 +122,17 @@
     </div>
   </div>
 
-  <div class="container-fluid knowledges juliussansone d-block d-sm-none pt-md-5 pb-md-5">
+  <div class="container-fluid knowledges juliussansone d-block d-sm-none pt-md-5 pb-md-5" id="competences">
     <div class="container mt-5 mb-2 pb-4">
-      <h1 class="text-center text-black mb-3">COMPÉTENCES</h1>
+      <h1 class="text-center text-black mb-3 competences">COMPÉTENCES</h1>
       <div class="text-center juliussansone mt-3">
         <p>Cliquer pour développer</p>
       </div>
       <div class="row pl-1 pr-1 mb-3">
         <div class="col-12 p-0">
           <div class="card rounded show-frontend ">
-            <img class="img-fluid img-knowledges1" src="img/knowledgescard1.jpg" alt="image de fond des compétences front-end" height="3264" width="3264">
+            <img class="img-fluid img-knowledges1" src="img/knowledgescard1.jpg"
+              alt="image de fond des compétences front-end" height="3264" width="3264">
           </div>
         </div>
       </div>
@@ -149,11 +140,15 @@
         <div class="hidden-frontend" style="display: none;">
           <div class="col-8 offset-2 d-flex justify-content-center pt-4 pb-4">
             <img class="img-fluid logoknowledges" src="img/logohtml.png" alt="logo html" height="177" width="177">
-            <img class="img-fluid ml-4 logoknowledges" src="img/logobootstrap.png" alt="logo de bootstrap" height="240" width="240">
+            <img class="img-fluid ml-4 logoknowledges" src="img/logobootstrap.png" alt="logo de bootstrap" height="240"
+              width="240">
             <img class="img-fluid ml-4 logoknowledges" src="img/logocss.png" alt="logo css" height="177" width="177">
-            <img class="img-fluid ml-4 logoknowledges" src="img/logosass.png" alt="logo de sass" height="142" width="142">
-            <img class="img-fluid ml-4 logoknowledges" src="img/logojs.png" alt="logo javascript" height="142" width="142">
-            <img class="img-fluid ml-4 logoknowledges" src="img/logoreact.png" alt="logo de react" height="132" width="142">
+            <img class="img-fluid ml-4 logoknowledges" src="img/logosass.png" alt="logo de sass" height="142"
+              width="142">
+            <img class="img-fluid ml-4 logoknowledges" src="img/logojs.png" alt="logo javascript" height="142"
+              width="142">
+            <img class="img-fluid ml-4 logoknowledges" src="img/logoreact.png" alt="logo de react" height="132"
+              width="142">
           </div>
         </div>
       </div>
@@ -161,7 +156,8 @@
       <div class="row pl-1 pr-1 mb-3">
         <div class="col-12 p-0">
           <div class="card rounded show-backend ">
-            <img class="img-fluid img-knowledges2" src="img/knowledgescard2.jpg" alt="image de fond des compétences back-end" height="5346" width="5346">
+            <img class="img-fluid img-knowledges2" src="img/knowledgescard2.jpg"
+              alt="image de fond des compétences back-end" height="5346" width="5346">
           </div>
         </div>
       </div>
@@ -170,9 +166,11 @@
           <div class="row pt-4 pb-4">
             <div class="col-8 offset-2 d-flex justify-content-center">
               <img class="img-fluid logoknowledges" src="img/logophp.png" alt="logo php" height="256" width="256">
-              <img class="img-fluid ml-4 logoknowledges" src="img/logosymfony.png" alt="logo symfony" height="142" width="142">
+              <img class="img-fluid ml-4 logoknowledges" src="img/logosymfony.png" alt="logo symfony" height="142"
+                width="142">
               <img class="img-fluid ml-4 logoknowledges" src="img/logosql.png" alt="logo sql" height="142" width="142">
-              <img class="img-fluid ml-4 logoknowledges" src="img/logophpmyadmin.png" alt="logo phpmyadmin" height="142" width="240">
+              <img class="img-fluid ml-4 logoknowledges" src="img/logophpmyadmin.png" alt="logo phpmyadmin" height="142"
+                width="240">
               <img class="img-fluid ml-4 logoknowledges" src="img/twig.png" alt="logo de twig" height="189" width="189">
             </div>
           </div>
@@ -182,7 +180,8 @@
       <div class="row pl-1 pr-1 mb-3">
         <div class="col-12 p-0">
           <div class="card rounded show-outils ">
-            <img class="img-fluid img-knowledges3" src="img/knowledgescard3.jpg" alt="image de fond des compétences en design" height="2832" width="2832">
+            <img class="img-fluid img-knowledges3" src="img/knowledgescard3.jpg"
+              alt="image de fond des compétences en design" height="2832" width="2832">
           </div>
         </div>
       </div>
@@ -190,9 +189,12 @@
         <div class="hidden-outils" style="display: none;">
           <div class="row pt-4 pb-4">
             <div class="col-8 offset-2 d-flex justify-content-center">
-              <img class="img-fluid logoknowledges" src="img/logophotoshop.png" alt="logo de Photoshop" height="189" width="189">
-              <img class="img-fluid ml-4 logoknowledges" src="img/logoxd.png" alt="logo de Adobe XD" height="142" width="142">
-              <img class="img-fluid ml-4 logoknowledges" src="img/logoillustrator.png" alt="logo de Illustrator" height="189" width="189">
+              <img class="img-fluid logoknowledges" src="img/logophotoshop.png" alt="logo de Photoshop" height="189"
+                width="189">
+              <img class="img-fluid ml-4 logoknowledges" src="img/logoxd.png" alt="logo de Adobe XD" height="142"
+                width="142">
+              <img class="img-fluid ml-4 logoknowledges" src="img/logoillustrator.png" alt="logo de Illustrator"
+                height="189" width="189">
             </div>
           </div>
         </div>
@@ -200,36 +202,46 @@
     </div>
   </div>
 
-  <div class="container-fluid p-0 project juliussansone">
-    <div id="app" class="wrapper" v-cloak v-bind:class="{'is-previous': isPreviousSlide, 'first-load': isFirstLoad}">
-      <div class="slide-wrapper" v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }"
-        v-bind:style="{ 'z-index': (slides.length - index), 'background-image': 'url(' + slide.bgImg + ')' }">
-        <div class="slide-inner">
-          <div class="slide-rect-filter">
-            <div class="slide-rect" v-bind:style="{'border-image-source': 'url(' + slide.rectImg + ')'}"></div>
-          </div>
-          <div class="slide-content">
-            <h1 class="slide-content-text">
-              <p>{{ slide.headlineFirstLine }}</p class=>
-              <p>{{ slide.headlineSecondLine }}</p>
-            </h1>
-          </div>
-          <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} </span></h2>
-        </div>
-      </div>
-      <div class="controls-container">
-        <button class="controls-button" v-for="(slide, index) in slides"
-          v-bind:class="{ active: index === currentSlide }"
-          v-on:click="updateSlide(index)">{{ slide.headlineFirstLine }} {{ slide.headlineSecondLine }}</button>
-      </div>
-      <div class="pagination-container">
-        <span class="pagination-item" v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }"
-          v-on:click="updateSlide(index)"></span>
-      </div>
-    </div>
+  <div class="container-fluid overflow-hidden p-0 text-white project juliussansone position-relative" id="projets">
+
+    <div id="slider">
+
+			<div class="slider-inner">
+				<div id="slider-content">
+					<div class="meta">Titre</div>
+					<h2 id="slide-title">King <br>Burger</h2>
+					<span data-slide-title="0">King <br>Burger</span>
+					<span data-slide-title="1">Soft RH <br></span>
+					<span data-slide-title="2">Allo <br>ciné</span>
+					<span data-slide-title="3">Brown <br>Bear</span>
+					<div class="meta">Technologies</div>
+					<div id="slide-status">HTML / CSS /Bootstrap / Sass</div>
+					<span data-slide-status="0">HTML / CSS /Bootstrap / Sass</span>
+					<span data-slide-status="1">PHP / Symfony</span>
+					<span data-slide-status="2">PHP</span>
+          <span data-slide-status="3">Least Concern</span>
+          <div class="meta">Liens</div>
+          
+				</div>
+			</div>
+
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/leopard2.jpg" />
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/lion2.jpg" />
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/tiger2.jpg" />
+			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/bear2.jpg" />
+
+			<div id="pagination">
+				<button class="active" data-slide="0"></button>
+				<button data-slide="1"></button>
+				<button data-slide="2"></button>
+				<button data-slide="3"></button>
+			</div>
+
+		</div>
+
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="apropos">
     <div class="container text-center pt-5 pb-5">
       <h1 class="juliussansone mt-4 mb-3">A propos</h1>
       <div class="row mb-4">
@@ -239,24 +251,25 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quasi inventore labore, aperiam veritatis, hic
             perspiciatis debitis odio voluptatibus itaque earum. Inventore, hic ex. Repudiandae deleniti quisquam id
             amet sit?</p>
+          <p>Télécharger mon cv <a>ici</a></p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid juliussansone p-0 contact">
+  <div class="container-fluid juliussansone p-0 contact" id="contact">
     <div class="container pt-4 pb-5 pt-md-4 pb-md-4">
       <h1 class="text-center text-white mt-4 mb-5 mt-md-5 mb-md-3">CONTACT</h1>
       <div class="row">
         <div class="col-12 col-md-8 offset-md-2 pt-md-4 pb-md-4">
           <div class="col-12 mb-3 p-0 col-md-12 pl-md-0">
-            <input type="text" class="form-control" placeholder="First name">
+            <input type="text" class="form-control montserrat" placeholder="Prénom">
           </div>
           <div class="col-12 mb-3 p-0 col-md-12 pr-md-0">
-            <input type="text" class="form-control" placeholder="Last name">
+            <input type="text" class="form-control montserrat" placeholder="Nom">
           </div>
-          <input type="email" class="form-control mb-3 mb-md-3" id="inputEmail" placeholder="Email">
-          <textarea class="form-control mb-md-3 mb-3" id="exampleFormControlTextarea1" placeholder="Message"
+          <input type="email" class="form-control mb-3 mb-md-3 montserrat" id="inputEmail" placeholder="Email">
+          <textarea class="form-control mb-md-3 mb-3 montserrat" id="exampleFormControlTextarea1" placeholder="Message"
             rows="3"></textarea>
           <div class="d-flex justify-content-center">
             <button type="button" class="btn btn-mdb-color">Envoyer</button>
@@ -268,11 +281,15 @@
   <div class="container-fluid footer">
     <div class="container">
       <div class="row pt-2 pb-2">
-        <div class="col-6 cedarville"><img class="logo-footer" src="img/logo-entier-desiree.png" alt="logo Désirée Besnard"></div>
+        <div class="col-6 cedarville"><img class="logo-footer" src="img/logo-entier-desiree-2.png"
+            alt="logo Désirée Besnard"></div>
         <div class="col-6 text-right">
-          <a href=""><img class="img-fluid socialmedia-links ml-sm-2" src="img/github.png" alt="logo github" height="100" width="100"></a class="">
-          <a href=""><img class="img-fluid socialmedia-links ml-sm-2" src="img/linkedin.png" alt="logo linkedin" height="100" width="100"></a>
-          <a href=""><img class="img-fluid socialmedia-links ml-sm-2" src="img/facebook.png" alt="logo facebook" height="100" width="100"></a>
+          <a href=""><img class="img-fluid socialmedia-links ml-sm-2" src="img/github.png" alt="logo github"
+              height="100" width="100"></a class="">
+          <a href=""><img class="img-fluid socialmedia-links ml-sm-2" src="img/linkedin.png" alt="logo linkedin"
+              height="100" width="100"></a>
+          <a href=""><img class="img-fluid socialmedia-links ml-sm-2" src="img/facebook.png" alt="logo facebook"
+              height="100" width="100"></a>
         </div>
       </div>
     </div>
@@ -287,7 +304,21 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40525870-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-40525870-5');
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+
   <script src="js/script.js"></script>
 
 </body>
